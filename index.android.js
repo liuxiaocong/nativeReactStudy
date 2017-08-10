@@ -12,4 +12,7 @@ import {
   View
 } from 'react-native';
 import App from './js/App';
+import Mutiple from './js/Mutiple';
 AppRegistry.registerComponent('nativeReactStudy', () => App);
+AppRegistry.registerComponent('multipleComponent', () => Mutiple);
+
