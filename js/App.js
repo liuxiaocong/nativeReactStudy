@@ -27,7 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <View style={{
-        marginTop:30
+        margin:30
       }}>
         <TouchableHighlight onPress={this.show}>
           <Text>
