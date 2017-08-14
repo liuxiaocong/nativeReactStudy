@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import Toast from './Toast';
 
+var TestView = require('./TestView');
 class App extends React.Component {
 
   // Mounting
@@ -36,15 +37,18 @@ class App extends React.Component {
         </TouchableHighlight>
 
         <Text>App</Text>
+        <TestView style={{
+          width:200,
+          height:200
+        }} bgColor="#ff0000"/>
       </View>
     )
   }
 
   show() {
-    if(Platform.OS !== 'ios')
-    {
+    if (Platform.OS !== 'ios') {
       Toast.show('show toast', Toast.SHORT);
-    }else {
+    } else {
       Alert.alert("show toast");
     }
   }

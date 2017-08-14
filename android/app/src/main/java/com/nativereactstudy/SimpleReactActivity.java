@@ -1,6 +1,12 @@
 package com.nativereactstudy;
 
 import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.shell.MainReactPackage;
+import com.nativereactstudy.widget.TestViewReactPackage;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class SimpleReactActivity extends ReactActivity {
 
@@ -12,4 +18,5 @@ public class SimpleReactActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "nativeReactStudy";
     }
+
 }
