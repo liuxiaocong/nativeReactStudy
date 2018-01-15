@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import App from './js/App';
 import Mutiple from './js/Mutiple';
+import ReactTab from './js/ReactTab';
 AppRegistry.registerComponent('nativeReactStudy', () => App);
 AppRegistry.registerComponent('multipleComponent', () => Mutiple);
-
+AppRegistry.registerComponent('reactTabComponent', () => ReactTab);

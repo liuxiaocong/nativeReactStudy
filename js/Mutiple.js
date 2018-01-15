@@ -2,15 +2,7 @@
  * Created by xiaoconglau on 10/08/2017.
  */
 import React from 'react';
-import {
-  AppRegistry,
-  Text,
-  View,
-  TouchableOpacity,
-  TouchableHighlight,
-  Alert,
-  Platform
-} from 'react-native';
+import {Alert, Platform, Text, TouchableHighlight, View} from 'react-native';
 import Toast from './Toast';
 
 class Mutiple extends React.Component {
@@ -31,7 +23,7 @@ class Mutiple extends React.Component {
       }}>
         <TouchableHighlight onPress={this.show}>
           <Text>
-            Mutiple
+            This view is coding in react-natvie
           </Text>
         </TouchableHighlight>
 

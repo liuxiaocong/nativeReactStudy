@@ -27,7 +27,6 @@ public class MultipleActivity extends Activity implements DefaultHardwareBackBtn
         mReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(getApplication())
                 .setBundleAssetName("index.android.bundle")
-                .setJSMainModuleName("index.android")
                 .addPackage(new MainReactPackage())
                 //important
                 .addPackage(new ToastReactPackage())

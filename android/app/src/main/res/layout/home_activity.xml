@@ -16,7 +16,7 @@
             android:text="Home page" />
 
         <Button
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:text="Open whole react page"
             android:padding="8dp"
             android:layout_width="wrap_content"
@@ -24,11 +24,28 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:text="Open multiple  page"
             android:padding="8dp"
             android:layout_width="wrap_content"
             android:onClick="openMultiple"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:text="Open native webview page"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:onClick="openNativeWebview"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:text="Open react-native tab page"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:onClick="openReactTab"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 </FrameLayout>
