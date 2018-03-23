@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
+import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
@@ -11,7 +12,7 @@ import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 import com.nativereactstudy.module.ToastReactPackage;
 
-public class MultipleActivity extends Activity implements DefaultHardwareBackBtnHandler {
+public class MultipleActivity extends ReactActivity implements DefaultHardwareBackBtnHandler {
     private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
 
@@ -26,7 +27,11 @@ public class MultipleActivity extends Activity implements DefaultHardwareBackBtn
         mReactRootView = new ReactRootView(this);
         mReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(getApplication())
-                .setBundleAssetName("index.android.bundle")
+                // 打包
+                //.setBundleAssetName("index.android.bundle")
+
+                // 远程调试
+                .setJSMainModulePath("index.android")
                 .addPackage(new MainReactPackage())
                 //important
                 .addPackage(new ToastReactPackage())
@@ -64,20 +69,20 @@ public class MultipleActivity extends Activity implements DefaultHardwareBackBtn
             mReactInstanceManager.onHostDestroy();
         }
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        if (mReactInstanceManager != null) {
-            mReactInstanceManager.onBackPressed();
-        } else {
-            super.onBackPressed();
-        }
-    }
-
-    @Override
-    public void invokeDefaultOnBackPressed() {
-        super.onBackPressed();
-    }
+//
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//
+//        if (mReactInstanceManager != null) {
+//            mReactInstanceManager.onBackPressed();
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
+//
+//    @Override
+//    public void invokeDefaultOnBackPressed() {
+//        super.onBackPressed();
+//    }
 }

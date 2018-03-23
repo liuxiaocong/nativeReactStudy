@@ -43,4 +43,20 @@ public class HomeActivity extends Activity {
         Intent intent = new Intent(this, ReactTabActivity.class);
         startActivity(intent);
     }
+
+    public void openReact2048Tab(View view) {
+        Intent intent = new Intent(this, React2048Activity.class);
+        startActivity(intent);
+    }
+
+    public void openNative2048Webview(View view) {
+        Intent intent = new Intent(this, NativeWebview2048Activity.class);
+        startActivity(intent);
+    }
 }
+
+//react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+//        react-native run-android
+
+// adb shell input keyevent 82
+// adb reverse tcp:8081 tcp:8081

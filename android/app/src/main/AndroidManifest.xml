@@ -58,8 +58,10 @@
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
         <activity android:name=".SimpleReactActivity" />
         <activity android:name=".MultipleActivity" />
-        <activity android:name=".NativeWebviewActivity"/>
-        <activity android:name=".ReactTabActivity"/>
+        <activity android:name=".NativeWebviewActivity" />
+        <activity android:name=".ReactTabActivity" />
+        <activity android:name=".React2048Activity" />
+        <activity android:name=".NativeWebview2048Activity" />
     </application>
 
 </manifest>

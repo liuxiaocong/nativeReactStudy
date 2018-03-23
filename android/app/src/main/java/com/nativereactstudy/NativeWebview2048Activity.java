@@ -3,10 +3,8 @@ package com.nativereactstudy;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -17,7 +15,7 @@ import android.webkit.WebViewClient;
  * Created by xiaoconglau on 10/08/2017.
  */
 
-public class NativeWebviewActivity extends Activity {
+public class NativeWebview2048Activity extends Activity {
 
     WebView webview;
 
@@ -57,7 +55,7 @@ public class NativeWebviewActivity extends Activity {
 
             }
         });
-        webview.loadUrl("http://172.28.1.29:8082/web-tab/");
+        webview.loadUrl("http://2048game.com/");
     }
 
     public void openWholeReact(View view) {
@@ -70,3 +68,4 @@ public class NativeWebviewActivity extends Activity {
         startActivity(intent);
     }
 }
+

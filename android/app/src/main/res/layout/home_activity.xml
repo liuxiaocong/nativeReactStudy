@@ -17,7 +17,7 @@
 
         <Button
             android:layout_margin="20dp"
-            android:text="Open whole react page"
+            android:text="打开react native页面 - 该页面都是react构成的"
             android:padding="8dp"
             android:layout_width="wrap_content"
             android:onClick="openWholeReact"
@@ -25,7 +25,7 @@
 
         <Button
             android:layout_margin="20dp"
-            android:text="Open multiple  page"
+            android:text="打开原生页面 - 该页面有一个view是react构成的"
             android:padding="8dp"
             android:layout_width="wrap_content"
             android:onClick="openMultiple"
@@ -33,7 +33,7 @@
 
         <Button
             android:layout_margin="20dp"
-            android:text="Open native webview page"
+            android:text="打开原生webview"
             android:padding="8dp"
             android:layout_width="wrap_content"
             android:onClick="openNativeWebview"
@@ -41,11 +41,27 @@
 
         <Button
             android:layout_margin="20dp"
-            android:text="Open react-native tab page"
+            android:text="打开react-native做的tab page"
             android:padding="8dp"
             android:layout_width="wrap_content"
             android:onClick="openReactTab"
             android:layout_height="wrap_content" />
 
+
+        <Button
+            android:layout_margin="20dp"
+            android:text="打开2048"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:onClick="openReact2048Tab"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:text="打开web版2048"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:onClick="openNative2048Webview"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </FrameLayout>

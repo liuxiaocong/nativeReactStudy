@@ -23,7 +23,7 @@ class Mutiple extends React.Component {
       }}>
         <TouchableHighlight onPress={this.show}>
           <Text>
-            This view is coding in react-natvie
+            This view is coding in react-natvie loops
           </Text>
         </TouchableHighlight>
 
